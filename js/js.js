@@ -1,8 +1,8 @@
        function main() {
         var map = new L.Map('map', {
-          zoomControl: false,
-          center: [43, 0],
-          zoom: 3
+          zoomControl: true,
+          center: [52.2297, 21.0117],
+          zoom: 11
         });
         L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
           attribution: 'Stamen'
@@ -23,4 +23,8 @@
       }
       // you could use $(window).load(main);
       window.onload = main;
+
+$('#remove').click(function() {
+      $('div.cartodb-legend.choropleth').remove();
+    });
     

@@ -1,7 +1,37 @@
-    
+body {
+    background-color: aqua;
+} 
 #map {
-        height: 75vh;
-    width: 500px;
+        height: 700px;
+        width: 500px;
         padding: 0;
         margin: 0;
-      }
+        position: relative;
+    }
+
+#ramka {
+    height: 100px;
+        width: 500px;
+        padding: 0;
+        margin: 0;
+    background-color: white;
+    position: absolute;
+    transform: translateY(-100px);
+}
+
+p {
+    text-align: center;
+}
+
+#map > div.cartodb-legend-stack > div, #map > div.cartodb-legend-stack {
+    visibility: hidden;
+}
+
+#map > div.cartodb-logo > a > img {
+    opacity: 0.1;
+}
+
+#map {
+    border: white solid 10px;
+    box-sizing: border-box;
+}
