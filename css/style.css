@@ -1,5 +1,6 @@
 body {
-    background-color: aqua;
+    background-color: white;
+    padding: 20px;
 } 
 #map {
         height: 700px;
@@ -7,6 +8,7 @@ body {
         padding: 0;
         margin: 0;
         position: relative;
+/*    z-index: -1;*/
     }
 
 #ramka {
@@ -17,6 +19,8 @@ body {
     background-color: white;
     position: absolute;
     transform: translateY(-100px);
+    line-height: 3px;
+/*    opacity: 0.5;*/
 }
 
 p {
@@ -27,11 +31,25 @@ p {
     visibility: hidden;
 }
 
-#map > div.cartodb-logo > a > img {
-    opacity: 0.1;
-}
+
 
 #map {
-    border: white solid 10px;
+    border: white solid 15px;
     box-sizing: border-box;
+        mix-blend-mode: multiply;
+    box-shadow: 1px 1px 10px 5px rgba(245,245,245, 0.5);
+
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+    display: inline;
+    border: 1px solid black;
+    margin: 5px 1px;
+    padding: 10px;
+    box-sizing: border-box; 
+    line-height: 30px;
 }
